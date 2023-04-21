@@ -17,7 +17,7 @@ class MainScreen extends StatelessWidget {
     return GetBuilder<MainController>(
       builder: (controller) {
         return Scaffold(
-          backgroundColor: Colors.white,
+          backgroundColor: MyColors.lightBlue,
           appBar: const PreferredSize(
               preferredSize: Size(double.infinity, 60),
               child: DefaultAppbarWidget()),

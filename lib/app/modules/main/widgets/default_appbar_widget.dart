@@ -15,7 +15,7 @@ class DefaultAppbarWidget extends GetView<MainController> {
   Widget build(BuildContext context) {
     return AppBar(
       elevation: 0,
-      backgroundColor: Colors.white,
+      backgroundColor: MyColors.lightBlue,
       leadingWidth: 90,
       toolbarHeight: 70,
       title: SvgPicture.asset(
@@ -31,9 +31,9 @@ class DefaultAppbarWidget extends GetView<MainController> {
               ? OutnerNeomorphisimWidget(
                   height: 55,
                   width: 55,
-                  boxColor: Colors.white,
+                  boxColor: MyColors.lightBlue,
                   shadowColor: Colors.grey.shade300,
-                  shadowColor1: Colors.grey.shade50,
+                  shadowColor1: Colors.white30,
                   child: SvgPicture.asset(
                     "assets/icons/Menu.svg",
                     colorFilter: const ColorFilter.mode(
@@ -45,15 +45,14 @@ class DefaultAppbarWidget extends GetView<MainController> {
               : InnerNeomorphisimWidget(
                   height: 55,
                   width: 55,
-                  boxColor: Colors.white,
+                  boxColor: MyColors.lightBlue,
                   shadowColor: Colors.grey,
-                  shadowColor1: Colors.white,
-                  colors: [
-                    Colors.blueGrey.shade100,
-                    Colors.grey.shade200,
-                    Colors.grey.shade100,
-                    Colors.white,
-                    Colors.white,
+                  shadowColor1: MyColors.lightBlue,
+                  colors: const [
+                    Color.fromARGB(255, 228, 235, 249),
+                    MyColors.lightBlue,
+                    Colors.white60,
+                    Colors.white60,
                   ],
                   child: SvgPicture.asset(
                     "assets/icons/Menu.svg",
@@ -77,9 +76,9 @@ class DefaultAppbarWidget extends GetView<MainController> {
                   ? OutnerNeomorphisimWidget(
                       height: 55,
                       width: 55,
-                      boxColor: Colors.white,
+                      boxColor: MyColors.lightBlue,
                       shadowColor: Colors.grey.shade300,
-                      shadowColor1: Colors.grey.shade50,
+                      shadowColor1: Colors.white30,
                       child: SvgPicture.asset(
                         "assets/icons/Settings.svg",
                         colorFilter: const ColorFilter.mode(
@@ -91,15 +90,14 @@ class DefaultAppbarWidget extends GetView<MainController> {
                   : InnerNeomorphisimWidget(
                       height: 55,
                       width: 55,
-                      boxColor: Colors.white,
+                      boxColor: MyColors.lightBlue,
                       shadowColor: Colors.grey,
-                      shadowColor1: Colors.white,
-                      colors: [
-                        Colors.blueGrey.shade100,
-                        Colors.grey.shade200,
-                        Colors.grey.shade100,
-                        Colors.white,
-                        Colors.white,
+                      shadowColor1: MyColors.lightBlue,
+                      colors: const [
+                        Color.fromARGB(255, 228, 235, 249),
+                        MyColors.lightBlue,
+                        Colors.white60,
+                        Colors.white60,
                       ],
                       child: SvgPicture.asset(
                         "assets/icons/Settings.svg",
