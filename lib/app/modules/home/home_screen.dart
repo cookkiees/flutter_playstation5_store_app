@@ -121,7 +121,7 @@ class HomeScreen extends GetView<HomeController> {
                                             : SvgPicture.asset(
                                                 "assets/icons/heart.svg",
                                                 colorFilter: ColorFilter.mode(
-                                                  Colors.grey.shade300,
+                                                  Colors.grey.shade400,
                                                   BlendMode.srcIn,
                                                 ),
                                               ),
