@@ -18,9 +18,18 @@ class DefaultAppbarWidget extends GetView<MainController> {
       backgroundColor: MyColors.lightBlue,
       leadingWidth: 90,
       toolbarHeight: 70,
-      title: SvgPicture.asset(
-        "assets/images/PS5 logo.svg",
-        colorFilter: const ColorFilter.mode(MyColors.dark, BlendMode.srcIn),
+      title: Obx(
+        () => GestureDetector(
+          onTap: () {
+            controller.toggleTabLogo();
+          },
+          child: SvgPicture.asset(
+            "assets/images/PS5 logo.svg",
+            colorFilter: controller.tabLogo.value
+                ? const ColorFilter.mode(MyColors.dark, BlendMode.srcIn)
+                : const ColorFilter.mode(Colors.blue, BlendMode.srcIn),
+          ),
+        ),
       ),
       leading: Obx(
         () => GestureDetector(
