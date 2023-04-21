@@ -13,7 +13,7 @@ class HomeScreen extends GetView<HomeController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: MyColors.lightBlue,
       body: SafeArea(
         child: SingleChildScrollView(
           child: Container(
@@ -86,9 +86,9 @@ class HomeScreen extends GetView<HomeController> {
                                     OutnerNeomorphisimWidget(
                                       height: 360,
                                       width: 190,
-                                      boxColor: Colors.white,
+                                      boxColor: MyColors.lightBlue,
                                       shadowColor: Colors.grey.shade300,
-                                      shadowColor1: Colors.grey.shade50,
+                                      shadowColor1: Colors.white38,
                                       offset: const Offset(4, 4),
                                       offset1: const Offset(-4, -4),
                                       blurRadius: 3,
@@ -114,7 +114,7 @@ class HomeScreen extends GetView<HomeController> {
                                                 "assets/icons/like.svg",
                                                 colorFilter:
                                                     const ColorFilter.mode(
-                                                  MyColors.dark,
+                                                  Colors.blue,
                                                   BlendMode.srcIn,
                                                 ),
                                               )
