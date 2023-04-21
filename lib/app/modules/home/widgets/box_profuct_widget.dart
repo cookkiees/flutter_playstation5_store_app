@@ -18,41 +18,42 @@ class BoxProductWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
-      mainAxisAlignment: MainAxisAlignment.end,
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        Container(
-          height: 200,
-          width: 170,
-          margin: const EdgeInsets.all(16),
-          child: Image.asset(images),
-        ),
-        FittedBox(
-          fit: BoxFit.cover,
+        Align(
+          alignment: Alignment.topCenter,
           child: Container(
-            margin: const EdgeInsets.only(left: 16, right: 16, bottom: 12),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              mainAxisAlignment: MainAxisAlignment.end,
-              children: [
-                Text(
-                  title,
-                  style: const TextStyle(
-                    fontSize: 13,
-                    fontWeight: FontWeight.w400,
-                  ),
+            height: 200,
+            width: 170,
+            margin: const EdgeInsets.only(top: 8, left: 8, right: 8),
+            child: Image.asset(images),
+          ),
+        ),
+        Container(
+          margin: const EdgeInsets.only(left: 16, right: 16, bottom: 12),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.end,
+            children: [
+              Text(
+                title,
+                style: const TextStyle(
+                  fontSize: 12,
+                  fontWeight: FontWeight.normal,
                 ),
-                const SizedBox(height: 2),
-                Text(
-                  subtitle,
-                  style: TextStyle(
-                    fontSize: 18,
-                    color: color,
-                    fontStyle: FontStyle.normal,
-                    fontWeight: FontWeight.bold,
-                  ),
+              ),
+              const SizedBox(height: 8),
+              Text(
+                subtitle,
+                style: TextStyle(
+                  fontSize: 14,
+                  color: color,
+                  fontFamily: "Durk wide",
+                  fontStyle: FontStyle.normal,
+                  fontWeight: FontWeight.bold,
                 ),
-              ],
-            ),
+              ),
+            ],
           ),
         )
       ],
