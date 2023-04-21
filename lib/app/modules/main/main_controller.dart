@@ -14,6 +14,12 @@ class MainController extends GetxController {
     tabMenu.value = !tabMenu.value;
   }
 
+  var tabLogo = true.obs;
+
+  void toggleTabLogo() {
+    tabLogo.value = !tabLogo.value;
+  }
+
   var tabSettings = true.obs;
 
   void toggleTabSettings() {
