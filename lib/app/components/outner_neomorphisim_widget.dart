@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class OutnerNeomorphisimWidget extends StatelessWidget {
-  const OutnerNeomorphisimWidget({
+  OutnerNeomorphisimWidget({
     super.key,
     required this.child,
     required this.boxColor,
@@ -9,6 +9,12 @@ class OutnerNeomorphisimWidget extends StatelessWidget {
     required this.shadowColor1,
     required this.height,
     required this.width,
+    this.offset = const Offset(4, 4),
+    this.blurRadius = 1,
+    this.spreadRadius = 1,
+    this.offset1 = const Offset(-4, -4),
+    this.blurRadius1 = 1,
+    this.spreadRadius1 = 1,
   });
 
   final Widget child;
@@ -17,6 +23,12 @@ class OutnerNeomorphisimWidget extends StatelessWidget {
   final Color shadowColor1;
   final double height;
   final double width;
+  double blurRadius;
+  double spreadRadius;
+  double blurRadius1;
+  double spreadRadius1;
+  Offset offset;
+  Offset offset1;
 
   @override
   Widget build(BuildContext context) {
@@ -32,15 +44,15 @@ class OutnerNeomorphisimWidget extends StatelessWidget {
           boxShadow: [
             BoxShadow(
               color: shadowColor,
-              offset: const Offset(4, 4),
-              blurRadius: 1,
-              spreadRadius: 1,
+              offset: offset,
+              blurRadius: blurRadius,
+              spreadRadius: spreadRadius,
             ),
             BoxShadow(
               color: shadowColor1,
-              offset: const Offset(-4, -4),
-              blurRadius: 1,
-              spreadRadius: 1,
+              offset: offset1,
+              blurRadius: blurRadius1,
+              spreadRadius: spreadRadius1,
             ),
           ],
         ),

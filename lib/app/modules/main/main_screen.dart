@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_playstation5_store_app/app/modules/home/home_screen.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 import '../../utils/my_colors.dart';
 import 'main_controller.dart';
 import 'widgets/default_appbar_widget.dart';
 import 'widgets/inner_neomorphisim_widget.dart';
-import 'widgets/outner_neomorphisim_widget.dart';
+import '../../components/outner_neomorphisim_widget.dart';
 
 class MainScreen extends StatelessWidget {
   const MainScreen({super.key});
@@ -23,7 +24,7 @@ class MainScreen extends StatelessWidget {
           body: IndexedStack(
             index: controller.tabIndex,
             children: [
-              Container(),
+              const HomeScreen(),
               Container(),
               Container(),
               Container(),
@@ -52,8 +53,8 @@ class MainScreen extends StatelessWidget {
                   BottomNavigationBarItem(
                     icon: controller.tabIndex == 0
                         ? InnerNeomorphisimWidget(
-                            height: 50,
-                            width: 50,
+                            height: 55,
+                            width: 55,
                             boxColor: MyColors.dark,
                             shadowColor: Colors.black54,
                             shadowColor1: MyColors.dark,
@@ -72,8 +73,8 @@ class MainScreen extends StatelessWidget {
                             ),
                           )
                         : OutnerNeomorphisimWidget(
-                            height: 50,
-                            width: 50,
+                            height: 55,
+                            width: 55,
                             boxColor: MyColors.dark,
                             shadowColor: Colors.black54,
                             shadowColor1: MyColors.dark,
@@ -90,8 +91,8 @@ class MainScreen extends StatelessWidget {
                   BottomNavigationBarItem(
                     icon: controller.tabIndex == 1
                         ? InnerNeomorphisimWidget(
-                            height: 50,
-                            width: 50,
+                            height: 55,
+                            width: 55,
                             boxColor: MyColors.dark,
                             shadowColor: Colors.black54,
                             shadowColor1: MyColors.dark,
@@ -102,7 +103,7 @@ class MainScreen extends StatelessWidget {
                               Color.fromRGBO(33, 38, 46, 1),
                             ],
                             child: SvgPicture.asset(
-                              "assets/icons/Profile.svg",
+                              "assets/icons/Search.svg",
                               colorFilter: const ColorFilter.mode(
                                 Colors.blue,
                                 BlendMode.srcIn,
@@ -110,13 +111,13 @@ class MainScreen extends StatelessWidget {
                             ),
                           )
                         : OutnerNeomorphisimWidget(
-                            height: 50,
-                            width: 50,
+                            height: 55,
+                            width: 55,
                             boxColor: MyColors.dark,
                             shadowColor: Colors.black54,
                             shadowColor1: MyColors.dark,
                             child: SvgPicture.asset(
-                              "assets/icons/Profile.svg",
+                              "assets/icons/Search.svg",
                               colorFilter: const ColorFilter.mode(
                                 Colors.white,
                                 BlendMode.srcIn,
@@ -128,8 +129,8 @@ class MainScreen extends StatelessWidget {
                   BottomNavigationBarItem(
                     icon: controller.tabIndex == 2
                         ? InnerNeomorphisimWidget(
-                            height: 50,
-                            width: 50,
+                            height: 55,
+                            width: 55,
                             boxColor: MyColors.dark,
                             shadowColor: Colors.black54,
                             shadowColor1: MyColors.dark,
@@ -140,7 +141,7 @@ class MainScreen extends StatelessWidget {
                               Color.fromRGBO(33, 38, 46, 1),
                             ],
                             child: SvgPicture.asset(
-                              "assets/icons/Search.svg",
+                              "assets/icons/Profile.svg",
                               colorFilter: const ColorFilter.mode(
                                 Colors.blue,
                                 BlendMode.srcIn,
@@ -148,13 +149,13 @@ class MainScreen extends StatelessWidget {
                             ),
                           )
                         : OutnerNeomorphisimWidget(
-                            height: 50,
-                            width: 50,
+                            height: 55,
+                            width: 55,
                             boxColor: MyColors.dark,
                             shadowColor: Colors.black54,
                             shadowColor1: MyColors.dark,
                             child: SvgPicture.asset(
-                              "assets/icons/Search.svg",
+                              "assets/icons/Profile.svg",
                               colorFilter: const ColorFilter.mode(
                                 Colors.white,
                                 BlendMode.srcIn,
@@ -166,8 +167,8 @@ class MainScreen extends StatelessWidget {
                   BottomNavigationBarItem(
                     icon: controller.tabIndex == 3
                         ? InnerNeomorphisimWidget(
-                            height: 50,
-                            width: 50,
+                            height: 55,
+                            width: 55,
                             boxColor: MyColors.dark,
                             shadowColor: Colors.black54,
                             shadowColor1: MyColors.dark,
@@ -186,8 +187,8 @@ class MainScreen extends StatelessWidget {
                             ),
                           )
                         : OutnerNeomorphisimWidget(
-                            height: 50,
-                            width: 50,
+                            height: 55,
+                            width: 55,
                             boxColor: MyColors.dark,
                             shadowColor: Colors.black54,
                             shadowColor1: MyColors.dark,

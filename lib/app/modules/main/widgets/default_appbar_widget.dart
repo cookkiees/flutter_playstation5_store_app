@@ -4,7 +4,7 @@ import 'package:get/get.dart';
 import '../../../utils/my_colors.dart';
 import '../main_controller.dart';
 import 'inner_neomorphisim_widget.dart';
-import 'outner_neomorphisim_widget.dart';
+import '../../../components/outner_neomorphisim_widget.dart';
 
 class DefaultAppbarWidget extends GetView<MainController> {
   const DefaultAppbarWidget({
@@ -18,6 +18,10 @@ class DefaultAppbarWidget extends GetView<MainController> {
       backgroundColor: Colors.white,
       leadingWidth: 90,
       toolbarHeight: 70,
+      title: SvgPicture.asset(
+        "assets/images/PS5 logo.svg",
+        colorFilter: const ColorFilter.mode(MyColors.dark, BlendMode.srcIn),
+      ),
       leading: Obx(
         () => GestureDetector(
           onTap: () {
