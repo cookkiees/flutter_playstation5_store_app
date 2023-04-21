@@ -35,13 +35,13 @@ class InnerNeomorphisimWidget extends StatelessWidget {
               color: shadowColor,
               offset: const Offset(2, 2),
               blurRadius: 0,
-              spreadRadius: 1,
+              spreadRadius: 0.5,
             ),
             BoxShadow(
               color: shadowColor1,
               offset: const Offset(-0, -0),
               blurRadius: 0,
-              spreadRadius: 2,
+              spreadRadius: 0.5,
             ),
           ],
           gradient: LinearGradient(
