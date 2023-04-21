@@ -44,6 +44,6 @@ class HomeController extends GetxController {
     "Game console",
     "Game console",
     "Gaming controller",
-    "Audio and cominication",
+    "Audio and communication",
   ];
 }
