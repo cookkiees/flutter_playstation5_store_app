@@ -1,4 +1,6 @@
 import 'package:get/get.dart';
+import '../modules/detail/detail_binding.dart';
+import '../modules/detail/detail_screen.dart';
 import '../modules/home/home_binding.dart';
 import '../modules/home/home_screen.dart';
 import '../modules/main/main_screen.dart';
@@ -18,6 +20,11 @@ class AppPages {
       name: AppRouters.home,
       page: () => const HomeScreen(),
       binding: HomeBinding(),
+    ),
+    GetPage(
+      name: AppRouters.detail,
+      page: () => const DetailScreen(),
+      binding: DetailBinding(),
     ),
   ];
 }

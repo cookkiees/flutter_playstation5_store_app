@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_playstation5_store_app/app/modules/home/home_controller.dart';
+import 'package:flutter_playstation5_store_app/app/routings/app_routers.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
 
 import '../../utils/my_colors.dart';
 import '../../components/outner_neomorphisim_widget.dart';
+import '../detail/detail_screen.dart';
 import 'widgets/box_profuct_widget.dart';
 
 class HomeScreen extends GetView<HomeController> {
@@ -37,6 +39,7 @@ class HomeScreen extends GetView<HomeController> {
                       return Obx(
                         () => GestureDetector(
                           onTap: () => controller.toggleTab(i),
+                          onDoubleTap: () => Get.toNamed(AppRouters.detail),
                           child: controller.tab.contains(i)
                               ? Stack(
                                   children: [
