@@ -16,6 +16,7 @@ class MyApp extends StatelessWidget {
       title: 'My App',
       theme: ThemeData(
         appBarTheme: const AppBarTheme(),
+        // ignore: deprecated_member_use
       ),
       initialRoute: AppPages.initial,
       initialBinding: ApiServiceBinding(),
