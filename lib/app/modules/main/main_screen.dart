@@ -31,7 +31,10 @@ class MainScreen extends StatelessWidget {
             ],
           ),
           bottomNavigationBar: ClipRRect(
-            borderRadius: BorderRadius.circular(30),
+            borderRadius: const BorderRadius.only(
+              topLeft: Radius.circular(30),
+              topRight: Radius.circular(30),
+            ),
             child: Theme(
               data: ThemeData(
                 splashColor: Colors.transparent,
