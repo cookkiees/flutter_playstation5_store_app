@@ -6,7 +6,6 @@ import 'package:get/get.dart';
 
 import '../../utils/my_colors.dart';
 import '../../components/outner_neomorphisim_widget.dart';
-import '../detail/detail_screen.dart';
 import 'widgets/box_profuct_widget.dart';
 
 class HomeScreen extends GetView<HomeController> {
